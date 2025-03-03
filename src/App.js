@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Login from './Login'; // ✅ Make sure Login.js exists inside `src/`
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with sayali
-        </a>
-      </header>
+      <h1>Welcome to Elendil React App</h1>
+      <Login /> {/* ✅ This will display the login form */}
     </div>
   );
 }
 
-export default App;
+export default App; // ✅ Ensure this export is present

@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Client } from 'appwrite';
+import App from './App';  // ✅ Make sure App.js exists
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <>
- My name is Sayali!!!
- </>
-);
 
-reportWebVitals();
+root.render(
+  <React.StrictMode>
+    <App />  {/* ✅ This makes sure App.js is running */}
+  </React.StrictMode>
+);
